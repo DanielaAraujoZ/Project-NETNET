@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.child{
+  margin:  0 0;
+  width: 50%;
+}
+
+*{
+  font-family: 'Headland One', serif;
+}
+
+.pageMain {
+  width: 100%;
+}
+.navbar {
+  height: 64px;
+  background: linear-gradient(180deg, #191919 0%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 101.98%);
+}
+.imageMatrix {
+  position: absolute;
+  width: 55.84px;
+  height: 24px;
+  left: 16px;
+  top: 16px;
+}
+.infoMovie {
+  margin-top: 315px;
+}
+.imageTitle {
+  margin-left: 24px;
+  margin-right: 24px;
+  display: block;
+  width: 90%;
+}
+.genre{
+  margin-top: 12px;
+  font-size: 11,2px;
+}
+.icons{
+  margin-top: 12px;
+}
+.icons img{
+  margin-left: 56px;
+}
+.iconPlay{
+  margin-top: 5.5px;
+  margin-bottom: 5.5px;
+}
+.infoMovies{
+  background-color: #000000;
+}
+.footer{
+  background-color: #000000;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.popular, .anime, .crimen{
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.textCategories{
+  font-size: 17.5px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  line-height: 23.91px;
+}
+.movieItem:hover{
+  cursor: pointer;
+}

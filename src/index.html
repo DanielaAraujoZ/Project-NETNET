@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="./index.js" type="module"> </script>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./input.css">
+</head>
+
+<body>
+    <div class="main md:container md:mx-auto flex justify-center">
+        <div class="child flex flex-col">
+            <div class="pageMain bg-[url('/Images/matrix.png')] bg-no-repeat bg-cover flex flex-col justify-between">
+                <div class="initialInfo">
+                    <nav class="navbar m-0 p-0">
+                        <img class="imageMatrix" src="../Images/logo-netflix.png" alt="matrix" />
+                    </nav>
+                    <div class="flex flex-row justify-center text-gray-100">
+                        <p class="mx-5">Series</p>
+                        <p class="mx-5">Peliculas</p>
+                        <p class="mx-5">Mi lista</p>
+                    </div>
+                </div>
+                <div class="infoMovie flex flex-col">
+                    <div class="title flex justify-center">
+                        <img class="imageTitle" src="../Images/matrix-reloaded.png" alt="matrix-reloaded">
+                    </div>
+                    <div class="genre text-gray-100 ">
+                        <ul class="flex flex-row justify-content-evenly">
+                            <li>Surrealita</li>
+                            <li>Distópico</li>
+                            <li>Hábil</li>
+                            <li>Siniestro</li>
+                            <li>Emocionante</li>
+                        </ul>
+                    </div>
+                    <div class="icons flex flex-row justify-content-evenly">
+                        <img class="ms-0" src="../Images/addlist.png" alt="buttonAddList">
+                        <img class="iconPlay" src="../Images/button-play.png" alt="buttonPlay">
+                        <img src="../Images/info.png" alt="buttonInfo">
+                    </div>>
+                </div>
+            </div>
+            <div class="infoMovies pb-3">
+                <div class="popular text-gray-100">
+                    <p class="textCategories">Populares en NetNet</p>
+                    <div id="contentPopular" class="flex flex-row justify-between"></div>
+                </div>
+                <div class="anime text-gray-100">
+                    <p class="textCategories">Series Japonesas Anime</p>
+                    <div id="contentAnime" class="flex flex-row justify-between"></div>
+                </div>
+                <div class="crimen text-gray-100">
+                    <p class="textCategories">Series de EE.UU sobre crimenes</p>
+                    <div id="contentCrimen" class="flex flex-row justify-between"></div>
+                </div>
+            </div>
+            <div class="footer bg-black flex flex-row justify-content-around mb-0">
+                <img src="../Images/home.png" alt="home">
+                <img src="../Images/prox.png" alt="prox">
+                <img src="../Images/search.png" alt="search">
+                <img src="../Images/dowloand.png" alt="dowloand">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!--
+    
+-->
