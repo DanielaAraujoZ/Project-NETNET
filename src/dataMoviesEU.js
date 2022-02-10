@@ -24,4 +24,9 @@ export const dataMoviesEU = [
         "img" : '../Images/eeuu/img5.png',
         'description': ''
     },
+    {
+        "name": 'Flash',
+        'img': '../Images/eeuu/img6.png',
+        'description': ''
+    }
 ]

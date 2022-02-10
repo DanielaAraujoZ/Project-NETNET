@@ -24,4 +24,9 @@ export const dataMoviesAmime = [
         "img" : '../Images/anime/img5.png',
         'description': ''
     },
+    {
+        "name": "The Seven Dragons",
+        "img" : '../Images/anime/img6.png',
+        'description': ''
+    },
 ]

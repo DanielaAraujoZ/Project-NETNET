@@ -1,75 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Headland+One&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.child{
-  margin:  0 0;
-  width: 50%;
+:root {
+  --black-bg: #000000;
+  --gray: #686868;
+  --red: #d22f26;
+  --white: #fff;
 }
 
-*{
-  font-family: 'Headland One', serif;
+body {
+  margin: 0;
+  font-family: "Headland One", serif;
+  max-height: 1229px;
 }
-
-.pageMain {
+main {
+  background-color: var(--black-bg);
+  width: 60%;
+  margin: 0 auto;
+  height: 100%;
+}
+.viewMain {
+  background-image: url("../Images/matrix.png");
   width: 100%;
+  margin: 0;
+  height: 849px;
 }
-.navbar {
-  height: 64px;
+.header {
+  width: 100%;
+  margin: 0;
   background: linear-gradient(180deg, #191919 0%, rgba(0, 0, 0, 0) 100%),
-    linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 101.98%);
+    linear-gradient(180deg, var(--black-bg) 0%, rgba(0, 0, 0, 0) 101.98%);
 }
-.imageMatrix {
-  position: absolute;
+.logo {
   width: 55.84px;
   height: 24px;
-  left: 16px;
-  top: 16px;
 }
-.infoMovie {
-  margin-top: 315px;
+.options {
+  gap: 48px;
+  color: var(--white);
+  font-size: 14px;
+  margin-top: 24px;
 }
-.imageTitle {
-  margin-left: 24px;
-  margin-right: 24px;
-  display: block;
-  width: 90%;
+.infoMatrix > img {
+  margin-bottom: 12px;
 }
-.genre{
+.genreMovie{
+  color: var(--white);
+  font-size: 16.2px;
+  line-height: 15.3px;
+  margin-bottom: 12px;
+  gap: 16px;
+}
+.genreMovie > p {
+  margin: 0 4px;
+}
+.logos {
+  gap: 48px;
+  margin-bottom: 36px;
   margin-top: 12px;
-  font-size: 11,2px;
 }
-.icons{
-  margin-top: 12px;
-}
-.icons img{
-  margin-left: 56px;
-}
-.iconPlay{
-  margin-top: 5.5px;
-  margin-bottom: 5.5px;
+.logos > img{
+  height: 48px;
 }
 .infoMovies{
-  background-color: #000000;
-}
-.footer{
-  background-color: #000000;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-.popular, .anime, .crimen{
-  margin-left: 16px;
-  margin-right: 16px;
+  width: 100%;
+  margin: 48px 0 0 0;
 }
 .textCategories{
-  font-size: 17.5px;
-  font-weight: 700;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  line-height: 23.91px;
+  margin: 16px 0 12px 0;
+  font-size: 23.91px;
 }
-.movieItem:hover{
-  cursor: pointer;
+.movieItem{
+  height: 190px;
+}
+footer{
+  margin: 0;
+}
+footer > img {
+  width: 100%;
+}
+.contInfo{
+  gap: 16px;
+}
+p{
+  font-weight: bold;
+}
+.popular, .anime, .crimen{
+  margin: 20px;
+  margin-left: 28px;
 }

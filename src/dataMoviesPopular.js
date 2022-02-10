@@ -24,4 +24,9 @@ export const dataMoviesPopular = [
         "img" : '../Images/Pop/img5.png',
         'description': ''
     },
+    {
+        "name": 'John Wick 3',
+        "img": '../Images/Pop/img6.png',
+        'description': ''
+    }
 ]
