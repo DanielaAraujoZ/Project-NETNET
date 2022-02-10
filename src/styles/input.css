@@ -23,7 +23,7 @@ main {
   height: 100%;
 }
 .viewMain {
-  background-image: url("../Images/matrix.png");
+  background-image: url("../../Images/matrix.png");
   width: 100%;
   margin: 0;
   height: 849px;

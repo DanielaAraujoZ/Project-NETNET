@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/info.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Info Movie NetNet</title>
+  </head>
+  <body>
+    <main class="containerMain bg-black flex flex-col">
+      <div class="infoTheMovie">
+        <button id="buttonBack">
+          <img
+            class="imageBack"
+            src="../Images/imagesProject/back.svg"
+            alt="back"
+          />
+        </button>
+        <img class="imageMovie" src="../Images/matrix2.svg" alt="imageMovie" />
+        <div class="contentMain flex flex-col">
+          <h1 class="titleMovie">Matrix Recargado</h1>
+          <div class="contentData flex flex-row">
+            <p class="porcentaje">99% de coincidencia</p>
+            <div class="group flex flex-row">
+              <p>2003</p>
+              <img src="../Images/imagesProject/r.png" />
+            </div>
+            <div class="group flex flex-row">
+              <p>2h 18min</p>
+              <img src="../Images/imagesProject/ha.png" />
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="buttonsOpt">
+              <img src="../Images/imagesProject/buttonPlay.png" />
+            </button>
+            <button class="buttonsOpt mt-2">
+              <img src="../Images/imagesProject/buttonDownload.svg" />
+            </button>
+          </div>
+          <p class="descriptionMovie">
+            Neo, Morpheus, Trinity y el resto de la tripulación continúan en la
+            lucha contra las máquinas que han esclavizado a la raza humana.
+            Ahora más humanos han sido despertados e intentan vivir en el mundo
+            real. A medida que aumentan en número, la batalla se acerca a Sion,
+            la última ciudad real en el mundo y centro de la resistencia humana.
+            Y tiene poco tiempo, muy poco tiempo...
+          </p>
+          <div class="credits">
+            <p>Elenco: Keanu Reeves, Laurence Fishburne...<b>más</b></p>
+            <p class="mt-2">Dirigido por: Lilly Wachowski, Lana Wachowski</p>
+          </div>
+          <div class="buttonsGroup">
+            <button>
+              <img class="imageB" src="../Images/imagesProject/Frame.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="moreSimilar">
+        <img
+          width="200px"
+          src="../Images/imagesProject/Rectangle 31.png"
+          alt=""
+        />
+        <div class="popular">
+          <p class="moreSimilar1">Mas similares</p>
+          <div
+            id="contentSimilar"
+            class="contInfo1 flex flex-row flex-wrap"
+          ></div>
+        </div>
+      </div>
+
+      <footer>
+        <img src="../Images/imagesProject/bottom-navegation.svg" alt="footer" />
+      </footer>
+    </main>
+  </body>
+  <script src="../src/scripts/info.js" type="module"></script>
+</html>

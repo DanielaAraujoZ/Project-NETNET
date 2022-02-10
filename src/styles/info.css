@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Headland+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-bg: #000000;
+  --gray: #686868;
+  --red: #d22f26;
+  --white: #fff;
+  --green: rgba(113, 208, 116, 1);
+}
+body {
+  margin: 0;
+  font-family: "Headland One", serif;
+  max-height: 1229px;
+}
+main {
+  background-color: var(--black-bg);
+  width: 60%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+#buttonBack {
+  margin: 10px;
+}
+.imageBack {
+  width: 48px;
+}
+.imageMovie {
+  width: 100%;
+}
+
+.contentMain {
+  margin: 24px;
+}
+.titleMovie {
+  font-size: 50px;
+  color: var(--white);
+  font-weight: 700;
+  line-height: 37px;
+  margin-bottom: 16px;
+}
+.porcentaje {
+  color: var(--green);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+.contentData {
+  align-items: center;
+  justify-content: space-between;
+}
+.group {
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--gray);
+  font-weight: 400;
+  gap: 8px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 24px 0;
+}
+.buttonsOpt {
+  margin-top: 16px;
+  width: 100%;
+}
+.buttonsOpt > img {
+  margin: 0 auto;
+  width: 70%;
+}
+.descriptionMovie {
+  font-size: 20px;
+  line-height: 34px;
+  color: var(--white);
+}
+.credits{
+    margin-top: 20px;
+    font-size: 15.2px;
+    line-height: 14px;
+    color: var(--white);
+    opacity: 0.5;
+}
+.buttonsGroup{
+    margin-top: 28px;
+    gap: 30px;
+    align-items: flex-end;
+}
+.imageB{
+    height: 70px;
+}
+
+/*Contenedor principal*/
+.moreSimilar{
+    margin: 24px;
+}
+/* Contenedor de info enviada de JS */
+.moreSimilar1{
+    margin: 16px 0 12px 0;
+    font-size: 27.91px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--white);
+}
+.contInfo1{
+    gap: 16px;
+}
+.movieItem{
+    height: 190px;
+  }
+footer > img {
+  width: 100%;
+  gap: 24px;
+}
