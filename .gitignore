@@ -163,3 +163,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+# Others
+tailwind.config.js
+package.json
+package-lock.json

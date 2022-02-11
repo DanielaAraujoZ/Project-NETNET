@@ -1,67 +1,91 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-    <script src="../src/scripts/index.js" type="module"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="../src/styles/input.css" />
-    <title> NetNet Main </title>
-</head>
+    <title>NetNet Main</title>
+  </head>
 
-<body>
+  <body>
     <main class="containerMain bg-black">
-        <div class="sm: h-2/4 md: h-3/5 lg:h-3/4 xl:h-5/6 viewMain bg-no-repeat bg-cover flex flex-col justify-between">
-            <div class="header">
-                <img class="logo" src="../Images/imagesProject/logo-netnet.png" alt="logo" />
-                <div class="options flex flex-row justify-center">
-                    <p>Series</p>
-                    <p>Películas</p>
-                    <p>Lista</p>
-                </div>
+      <div
+        class="sm: h-2/4 md: h-3/5 lg:h-3/4 xl:h-5/6 viewMain bg-no-repeat bg-cover flex flex-col justify-between"
+      >
+        <div class="header pt-4 px-4">
+          <div class="flex flex-row justify-between">
+            <img
+              class="logo"
+              src="../Images/imagesProject/logo-netnet.png"
+              alt="logo"
+            />
+            <div class="searchSpace flex flex-row">
+              <input id="inputSearch" class="inputSearch" placeholder="Search" />
+              <button id="searchButton"><img src="../Images/imagesProject/Vector.png" /></button>
             </div>
-
-            <div class="infoMatrix flex flex-col justify-center items-center">
-                <img src="../Images/matrixReloaded.svg" alt="matrixReloaded" />
-                <div class="genreMovie flex flex-row justify-center">
-                    <p>Surrealista</p>
-                    <p>Distópico</p>
-                    <p>Hábil</p>
-                    <p>Siniestro</p>
-                    <p>Emocionante</p>
-                </div>
-                <div class="logos flex flex-row justify-center">
-                    <img src="../Images/imagesProject/plus.svg" />
-                    <img src="../Images/imagesProject/button.svg" />
-                    <img src="../Images/imagesProject/info.svg" />
-                </div>
-            </div>
+          </div>
+          <div class="options flex flex-row justify-center">
+            <p>Series</p>
+            <p>Películas</p>
+            <p>Lista</p>
+          </div>
         </div>
 
-        <div class="infoMovies">
-            <div class="popular text-gray-100 ">
-                <p class="textCategories">Populares en NetNet</p>
-                <div id="contentPopular" class="contInfo flex flex-row flex-wrap "></div>
-            </div>
-            <div class="anime text-gray-100">
-                <p class="textCategories">Series Japonesas Anime</p>
-                <div id="contentAnime" class="contInfo flex flex-row flex-wrap"></div>
-            </div>
-            <div class="crimen text-gray-100">
-                <p class="textCategories">Series de EE.UU sobre crimenes</p>
-                <div id="contentCrimen" class="contInfo flex flex-row flex-wrap"></div>
-            </div>
+        <div class="infoMatrix flex flex-col justify-center items-center">
+          <img src="../Images/matrixReloaded.svg" alt="matrixReloaded" />
+          <div class="genreMovie flex flex-row justify-center">
+            <p>Surrealista</p>
+            <p>Distópico</p>
+            <p>Hábil</p>
+            <p>Siniestro</p>
+            <p>Emocionante</p>
+          </div>
+          <div class="logos flex flex-row justify-center">
+            <img src="../Images/imagesProject/plus.svg" />
+            <img src="../Images/imagesProject/button.svg" />
+            <img src="../Images/imagesProject/info.svg" />
+          </div>
         </div>
-        <footer>
-            <img src="../Images/imagesProject/bottom-navegation.svg"> 
-        </footer>
+      </div>
+
+      <div id="infoMovies" class="infoMovies">
+        <div id="popular" class="popular text-gray-100">
+          <p class="textCategories">Populares en NetNet</p>
+          <div
+            id="contentPopular"
+            class="contInfo flex flex-row flex-wrap"
+          ></div>
+        </div>
+
+        <div class="anime text-gray-100">
+          <p class="textCategories">Series Japonesas Anime</p>
+          <div id="contentAnime" class="contInfo flex flex-row flex-wrap"></div>
+        </div>
+        <div class="crimen text-gray-100">
+          <p class="textCategories">Series de EE.UU sobre crimenes</p>
+          <div
+            id="contentCrimen"
+            class="contInfo flex flex-row flex-wrap"
+          ></div>
+        </div>
+      </div>
+      <footer>
+        <img src="../Images/imagesProject/bottom-navegation.svg" />
+      </footer>
     </main>
-</body>
-
+  </body>
+  <script src="../src/scripts/index.js"></script>
 </html>

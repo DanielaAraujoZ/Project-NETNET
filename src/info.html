@@ -22,53 +22,17 @@
   <body>
     <main class="containerMain bg-black flex flex-col">
       <div class="infoTheMovie">
-        <button id="buttonBack">
-          <img
-            class="imageBack"
-            src="../Images/imagesProject/back.svg"
-            alt="back"
-          />
+        <button id="buttonback">
+          <a href="./index.html">
+            <img
+              class="imageBack"
+              src="../Images/imagesProject/back.svg"
+              alt="back"
+            />
+          </a>
         </button>
-        <img class="imageMovie" src="../Images/matrix2.svg" alt="imageMovie" />
-        <div class="contentMain flex flex-col">
-          <h1 class="titleMovie">Matrix Recargado</h1>
-          <div class="contentData flex flex-row">
-            <p class="porcentaje">99% de coincidencia</p>
-            <div class="group flex flex-row">
-              <p>2003</p>
-              <img src="../Images/imagesProject/r.png" />
-            </div>
-            <div class="group flex flex-row">
-              <p>2h 18min</p>
-              <img src="../Images/imagesProject/ha.png" />
-            </div>
-          </div>
-          <div class="buttons">
-            <button class="buttonsOpt">
-              <img src="../Images/imagesProject/buttonPlay.png" />
-            </button>
-            <button class="buttonsOpt mt-2">
-              <img src="../Images/imagesProject/buttonDownload.svg" />
-            </button>
-          </div>
-          <p class="descriptionMovie">
-            Neo, Morpheus, Trinity y el resto de la tripulación continúan en la
-            lucha contra las máquinas que han esclavizado a la raza humana.
-            Ahora más humanos han sido despertados e intentan vivir en el mundo
-            real. A medida que aumentan en número, la batalla se acerca a Sion,
-            la última ciudad real en el mundo y centro de la resistencia humana.
-            Y tiene poco tiempo, muy poco tiempo...
-          </p>
-          <div class="credits">
-            <p>Elenco: Keanu Reeves, Laurence Fishburne...<b>más</b></p>
-            <p class="mt-2">Dirigido por: Lilly Wachowski, Lana Wachowski</p>
-          </div>
-          <div class="buttonsGroup">
-            <button>
-              <img class="imageB" src="../Images/imagesProject/Frame.png" />
-            </button>
-          </div>
-        </div>
+
+        <div id="contentMain" class="contentMain flex flex-col"></div>
       </div>
 
       <div class="moreSimilar">
@@ -91,5 +55,5 @@
       </footer>
     </main>
   </body>
-  <script src="../src/scripts/info.js" type="module"></script>
+  <script src="../src/scripts/info.js"></script>
 </html>

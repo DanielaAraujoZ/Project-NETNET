@@ -23,7 +23,7 @@ main {
   height: 100%;
 }
 
-#buttonBack {
+#buttonback {
   margin: 10px;
 }
 .imageBack {
@@ -31,6 +31,7 @@ main {
 }
 .imageMovie {
   width: 100%;
+  margin-bottom: 16px;
 }
 
 .contentMain {
@@ -107,10 +108,10 @@ main {
     color: var(--white);
 }
 .contInfo1{
-    gap: 16px;
+    gap: 8px;
 }
 .movieItem{
-    height: 190px;
+    height: 180px;
   }
 footer > img {
   width: 100%;
