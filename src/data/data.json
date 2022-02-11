@@ -1,5 +1,5 @@
 {
-    "movies": [{
+    "data": [{
             "id": 1,
             "name": "Matrix Reloaded",
             "img": "../Images/Pop/img1.png",

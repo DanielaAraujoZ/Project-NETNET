@@ -28,7 +28,7 @@ showMovies(getInfo(baseURL));
 const containerDiv = document.getElementById("contentMain");
 
 window.addEventListener("DOMContentLoaded", async () => {
-  const { name, img, year, duration, description, id } = infoLocal[0];
+  const { name, img, year, duration, description } = infoLocal[0];
   
   containerDiv.innerHTML += `
     <img class="imageMovie" src="${img}" alt="${name}"/>
