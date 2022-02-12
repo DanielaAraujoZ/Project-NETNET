@@ -1,6 +1,5 @@
 const infoLocal = JSON.parse(localStorage.getItem("MOVIE"));
-console.log(infoLocal[0]);
-const baseURL = " http://localhost:4000/movies";
+const baseURL = "https://serverprojectnetnet.herokuapp.com/data";
 const contentSimilar = document.getElementById("contentSimilar");
 
 async function getInfo(url) {
@@ -28,7 +27,7 @@ showMovies(getInfo(baseURL));
 const containerDiv = document.getElementById("contentMain");
 
 window.addEventListener("DOMContentLoaded", async () => {
-  const { name, img, year, duration, description } = infoLocal[0];
+  const { name, img, year, duration, description, id } = infoLocal[0];
   
   containerDiv.innerHTML += `
     <img class="imageMovie" src="${img}" alt="${name}"/>
@@ -60,9 +59,17 @@ window.addEventListener("DOMContentLoaded", async () => {
             <p class="mt-2">Dirigido por: Lilly Wachowski, Lana Wachowski</p>
           </div>
           <div class="buttonsGroup">
-            <button>
-              <img class="imageB" src="../Images/imagesProject/Frame.png" />
+            <button onclick="sendToList(${id})">
+              <img class="imageB" src="../Images/imagesProject/Frame.png" alt="addButton"/>
             </button>
           </div>
     `;
 });
+
+
+async function sendToList (id) {
+    let data = await getInfo(baseURL)
+    let infoSend = data.filter((item) => item.id === id)
+    localStorage.setItem('MOVIE', JSON.stringify(infoSend[0]))
+    window.location.href = "./list.html";
+}

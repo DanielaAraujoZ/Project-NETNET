@@ -55,8 +55,11 @@ main {
 .options {
   gap: 48px;
   color: var(--white);
-  font-size: 14px;
+  font-size: 20px;
   margin-top: 24px;
+}
+#myList{
+  color: red;
 }
 .infoMatrix > img {
   margin-bottom: 12px;

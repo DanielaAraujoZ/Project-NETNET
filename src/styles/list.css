@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Headland+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-bg: #000000;
+  --gray: #686868;
+  --red: #d22f26;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: "Headland One", serif;
+  max-height: 1229px;
+}
+main  {
+  background-color: var(--black-bg);
+  width: 60%;
+  margin: 0 auto;
+  height: 100%;
+}
+.nav, .mainContent{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 16px;
+}
+.titleList{
+    font-size: 33.91px;
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 4px;
+}
+.containerCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 24px;
+}
+.card >img{
+    height: 200px;
+}
+.infomovie{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: var(--white);
+    margin-left: 20px;
+    font-size: 16px;
+}
+.titleMovie{
+    font-weight: 700;
+    font-size: 32px;
+}
+.infomovie > p {
+    margin: 1px 4px 1px 4px;
+}
+footer {
+  margin: 0;
+}
+footer > img {
+  width: 100%;
+}

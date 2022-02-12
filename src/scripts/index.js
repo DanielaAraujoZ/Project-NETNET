@@ -1,4 +1,4 @@
-const baseURL = " http://localhost:4000/movies";
+const baseURL = "https://serverprojectnetnet.herokuapp.com/data";
 const divPopular = document.getElementById("contentPopular");
 const divAnime = document.getElementById("contentAnime");
 const divCrimen = document.getElementById("contentCrimen");
