@@ -69,6 +69,6 @@ window.addEventListener("DOMContentLoaded", async () => {
 async function sendToList(id) {
   let data = await getInfo(baseURL);
   let infoSend = data.filter((item) => item.id === id);
-  localStorage.setItem("MOVIE", JSON.stringify(setMovies));
+  localStorage.setItem("MOVIE", JSON.stringify(infoSend[0]));
   window.location.href = "./list.html";
 }
