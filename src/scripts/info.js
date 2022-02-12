@@ -28,7 +28,7 @@ const containerDiv = document.getElementById("contentMain");
 
 window.addEventListener("DOMContentLoaded", async () => {
   const { name, img, year, duration, description, id } = infoLocal[0];
-  
+
   containerDiv.innerHTML += `
     <img class="imageMovie" src="${img}" alt="${name}"/>
           <h1 class="titleMovie">${name}</h1>
@@ -66,10 +66,9 @@ window.addEventListener("DOMContentLoaded", async () => {
     `;
 });
 
-
-async function sendToList (id) {
-    let data = await getInfo(baseURL)
-    let infoSend = data.filter((item) => item.id === id)
-    localStorage.setItem('MOVIE', JSON.stringify(infoSend[0]))
-    window.location.href = "./list.html";
+async function sendToList(id) {
+  let data = await getInfo(baseURL);
+  let infoSend = data.filter((item) => item.id === id);
+  localStorage.setItem("MOVIE", JSON.stringify(setMovies));
+  window.location.href = "./list.html";
 }
